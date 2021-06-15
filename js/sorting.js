@@ -1,6 +1,4 @@
 function swap(el1, el2) {
-    console.log('In swap()');
-    
     let temp = el1.style.height;
     el1.style.height = el2.style.height;
     el2.style.height = temp;
@@ -47,7 +45,6 @@ function waitforme(milisec) {
 let arraySize = document.querySelector('#arr_sz');
 
 arraySize.addEventListener('input', function(){
-    console.log(arraySize.value, typeof(arraySize.value));
     createNewArray(parseInt(arraySize.value));
 });
 
@@ -56,7 +53,6 @@ let delay = 260;
 let delayElement = document.querySelector('#speed_input');
 
 delayElement.addEventListener('input', function(){
-    console.log(delayElement.value, typeof(delayElement.value));
     delay = 320 - parseInt(delayElement.value);
 });
 
